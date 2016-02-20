@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>jqSugest</title>
+  	<meta charset="utf-8">
+  	<link rel="stylesheet" type="text/css" href="css/jqSuggestion.css"/>
+  	<script src="js/jquery-1.11.3.min.js"></script>
+  	<script type="text/javascript" src="js/jqSuggestion.js"></script>
+</head>
+
+<body>
+	<input type="text" name="text" id='sample-1' />
+    <br /><br /><br />
+    <input type="text" name="text" id='sample-2' />
+	
+    <script>
+        $("#sample-1").jqSuggestion({
+            "duplicate"   : false,
+            "limit"       : 4,
+            "preSelected" : ["Blackberry", "Samsung"] || [],
+            "suggestions" : ["Alcatel", "Apple", "Asus", "Blackberry", "Celkon", "Lg", "Micromax", "Samsung", "Sony", "Xiomi"],
+            "update"      : function () {                
+            }
+        });
+        
+        $("#sample-2").jqSuggestion({
+            "duplicate"   : true,
+            "preSelected" : ["Blackberry", "Samsung"] || [],
+            "suggestions" : ["Alcatel", "Apple", "Asus", "Blackberry", "Celkon", "Lg", "Micromax", "Samsung", "Sony", "Xiomi"],
+            "update"      : function () {                
+            }
+        });
+    </script>
+</body>
+
+</html>

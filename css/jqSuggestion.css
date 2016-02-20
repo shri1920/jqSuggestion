@@ -1,0 +1,49 @@
+.jqs-wrap{
+    color: #334f69;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+}
+.jqs-selected-wrap {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.jqs-selected-wrap input {
+    border: 0px solid;
+    float: left;
+    padding: 5px;
+    outline: none;
+}
+.jqs-selected {
+	background: #fff;
+    border: 1px solid #D8E4F0;
+    float: left;
+    margin: 2px;
+    padding: 2px 5px 2px 5px;
+}
+.jqs-delete {
+    cursor: pointer;
+    margin: 0px 0 0 5px;
+}
+.jqs-suggestion-wrap {
+    background: #fff;
+    border: 0 1px 1px 1px;
+    border-color: #D8E4F0;
+    border-style: solid;
+    display: none;
+    max-height: 150px!important;
+    overflow-y: auto;
+    padding: 0 3px 0 3px;
+    position: absolute;
+    z-index: 1000;
+}
+.jqs-options {
+    cursor: pointer;
+    padding: 0 0 3px 0;
+}
+/*.jqs-options:hover {
+    background: #F5F5F5;
+}*/
+.jqs-active {
+    background: #D8E4F0;
+}
